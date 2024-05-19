@@ -1,0 +1,70 @@
+{
+  "kind": "collectionType",
+  "collectionName": "projects",
+  "info": {
+    "singularName": "project",
+    "pluralName": "projects",
+    "displayName": "Project",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "blockchain": {
+      "type": "string"
+    },
+    "totalSupply": {
+      "type": "string"
+    },
+    "initialMarketCap": {
+      "type": "string"
+    },
+    "fullyDilutedMarketCap": {
+      "type": "string"
+    },
+    "launchPrice": {
+      "type": "string"
+    },
+    "tokenAddress": {
+      "type": "string"
+    },
+    "idoStarts": {
+      "type": "datetime"
+    },
+    "idoEnds": {
+      "type": "datetime"
+    },
+    "claimStarts": {
+      "type": "datetime"
+    },
+    "listing": {
+      "type": "datetime"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "totalRaise": {
+      "type": "string"
+    }
+  }
+}
