@@ -65,6 +65,12 @@
     },
     "totalRaise": {
       "type": "string"
+    },
+    "oversubscribed": {
+      "type": "string"
+    },
+    "allTimeHigh": {
+      "type": "string"
     }
   }
 }

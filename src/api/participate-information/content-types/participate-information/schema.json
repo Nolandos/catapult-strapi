@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "participate_informations",
+  "info": {
+    "singularName": "participate-information",
+    "pluralName": "participate-informations",
+    "displayName": "ParticipateInformation"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "ordinalNumber": {
+      "type": "integer"
+    }
+  }
+}
