@@ -447,6 +447,7 @@ export interface ApiProjectProject extends Schema.CollectionType {
     allTimeHigh: Attribute.String;
     shortDescription: Attribute.Text;
     socialLinks: Attribute.JSON;
+    totalLockedCATA: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

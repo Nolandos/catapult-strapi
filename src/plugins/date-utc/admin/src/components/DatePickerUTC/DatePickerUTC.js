@@ -10,10 +10,10 @@ dayjs.extend(utc);
 const DatePickerUTC = ({ disabled, intlLabel, onChange, name, value }) => {
   const [date, setDate] = useState(value ? dayjs.utc(value, 'YYYY-MM-DD HH:mm:ss') : null);
 
-  const handleDateChange = (date) => {
-    if (date) {
-      setDate(date);
-      onChange({ target: { name, value: date.format() } });
+  const handleDateChange = (_, dateStr) => {
+    if (dateStr) {
+      setDate(dayjs.utc(dateStr));
+      onChange({ target: { name, value: dayjs.utc(dateStr).format() } });
     } else {
       setDate(null);
       onChange({ target: { name, value: null } });
@@ -33,6 +33,7 @@ const DatePickerUTC = ({ disabled, intlLabel, onChange, name, value }) => {
         }}
       >{intlLabel ? formatMessage(intlLabel) : ''}</span>
       <DatePicker
+        locale={locale}
         disabled={disabled}
         value={date}
         onChange={handleDateChange}
