@@ -369,6 +369,7 @@ export interface ApiParticipateInformationParticipateInformation
     singularName: 'participate-information';
     pluralName: 'participate-informations';
     displayName: 'ParticipateInformation';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -415,15 +416,37 @@ export interface ApiProjectProject extends Schema.CollectionType {
     fullyDilutedMarketCap: Attribute.String;
     launchPrice: Attribute.String;
     tokenAddress: Attribute.String;
-    idoStarts: Attribute.DateTime;
-    idoEnds: Attribute.DateTime;
-    claimStarts: Attribute.DateTime;
-    listing: Attribute.DateTime;
+    idoStarts: Attribute.DateTime &
+      Attribute.SetPluginOptions<{
+        'date-utc': {
+          enabled: true;
+        };
+      }>;
+    idoEnds: Attribute.DateTime &
+      Attribute.SetPluginOptions<{
+        'date-utc': {
+          enabled: true;
+        };
+      }>;
+    claimStarts: Attribute.DateTime &
+      Attribute.SetPluginOptions<{
+        'date-utc': {
+          enabled: true;
+        };
+      }>;
+    listing: Attribute.DateTime &
+      Attribute.SetPluginOptions<{
+        'date-utc': {
+          enabled: true;
+        };
+      }>;
     slug: Attribute.UID<'api::project.project', 'name'>;
     image: Attribute.Media;
     totalRaise: Attribute.String;
     oversubscribed: Attribute.String;
     allTimeHigh: Attribute.String;
+    shortDescription: Attribute.Text;
+    socialLinks: Attribute.JSON;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

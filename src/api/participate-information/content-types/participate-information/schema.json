@@ -4,7 +4,8 @@
   "info": {
     "singularName": "participate-information",
     "pluralName": "participate-informations",
-    "displayName": "ParticipateInformation"
+    "displayName": "ParticipateInformation",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true

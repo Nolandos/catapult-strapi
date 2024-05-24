@@ -37,16 +37,36 @@
       "type": "string"
     },
     "idoStarts": {
-      "type": "datetime"
+     "type": "datetime",
+      "pluginOptions": {
+        "date-utc": {
+          "enabled": true
+        }
+      }
     },
     "idoEnds": {
-      "type": "datetime"
+     "type": "datetime",
+      "pluginOptions": {
+        "date-utc": {
+          "enabled": true
+        }
+      }
     },
     "claimStarts": {
-      "type": "datetime"
+     "type": "datetime",
+      "pluginOptions": {
+        "date-utc": {
+          "enabled": true
+        }
+      }
     },
     "listing": {
-      "type": "datetime"
+     "type": "datetime",
+      "pluginOptions": {
+        "date-utc": {
+          "enabled": true
+        }
+      }
     },
     "slug": {
       "type": "uid",
@@ -71,6 +91,12 @@
     },
     "allTimeHigh": {
       "type": "string"
+    },
+    "shortDescription": {
+      "type": "text"
+    },
+    "socialLinks": {
+      "type": "json"
     }
   }
 }
