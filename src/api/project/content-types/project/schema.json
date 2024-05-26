@@ -100,6 +100,12 @@
     },
     "totalLockedCATA": {
       "type": "string"
+    },
+    "withdrawalContractAddress": {
+      "type": "string"
+    },
+    "token": {
+      "type": "string"
     }
   }
 }
