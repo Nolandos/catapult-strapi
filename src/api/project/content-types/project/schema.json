@@ -15,9 +15,6 @@
     "name": {
       "type": "string"
     },
-    "description": {
-      "type": "text"
-    },
     "blockchain": {
       "type": "string"
     },
@@ -106,6 +103,9 @@
     },
     "token": {
       "type": "string"
+    },
+    "description": {
+      "type": "richtext"
     }
   }
 }

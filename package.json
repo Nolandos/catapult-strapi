@@ -18,6 +18,7 @@
     "better-sqlite3": "8.6.0",
     "dayjs": "^1.11.11",
     "dayjs-plugin-utc": "^0.1.2",
+    "pg": "^8.11.5",
     "react": "^18.0.0",
     "react-datetime": "^3.2.0",
     "react-dom": "^18.0.0",

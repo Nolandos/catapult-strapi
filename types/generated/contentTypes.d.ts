@@ -409,7 +409,6 @@ export interface ApiProjectProject extends Schema.CollectionType {
   };
   attributes: {
     name: Attribute.String;
-    description: Attribute.Text;
     blockchain: Attribute.String;
     totalSupply: Attribute.String;
     initialMarketCap: Attribute.String;
@@ -450,6 +449,7 @@ export interface ApiProjectProject extends Schema.CollectionType {
     totalLockedCATA: Attribute.String;
     withdrawalContractAddress: Attribute.String;
     token: Attribute.String;
+    description: Attribute.RichText;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
